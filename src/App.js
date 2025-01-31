@@ -8,8 +8,9 @@ function App() {
   return (
     <div>
       <h2>Welcome to Polly</h2>
-      {isPending && <div>Loading...</div>}
+      {!err && isPending && <div>Loading...</div>}
       {data && <DisplayPolls polls={data} />}
+      {err && <div>{err}</div>}
     </div>
   );
 }
