@@ -1,17 +1,20 @@
-import DisplayPolls from "./DisplayPolls";
-import useFetch from "./UseFetch";
-import { useEffect } from "react";
+import Navbar from "./Navbar";
+import Create from "./Create";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./Home";
 
 function App() {
-  const { data, err, isPending } = useFetch("http://localhost:8000/Polls");
-
   return (
-    <div>
-      <h2 id="page-title">Welcome to Polly</h2>
-      {!err && isPending && <div>Loading...</div>}
-      {data && <DisplayPolls polls={data} />}
-      {err && <div>{err}</div>}
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/new-poll" element={<Create />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

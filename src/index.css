@@ -10,11 +10,22 @@ body {
   align-items: center;
 }
 
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.navbar-element {
+  font-size: 1.5rem;
+  color: #555;
+}
 /* Page Title */
-#page-title {
+.page-title {
   font-size: 2rem;
   color: #333;
-  margin: 20px 0;
 }
 
 /* Loading & Error Messages */
@@ -55,7 +66,7 @@ body {
 /* Poll Title */
 #poll-title {
   font-size: 1.5rem;
-  color: #007bff;
+  color: seagreen;
   margin-bottom: 5px;
 }
 
@@ -85,7 +96,6 @@ body {
 #options {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
   background: #f1f1f1;
   padding: 8px 12px;
@@ -95,7 +105,7 @@ body {
 /* Option Button */
 #option-button {
   padding: 8px 12px;
-  background-color: #007bff;
+  background-color: green;
   border: none;
   border-radius: 5px;
   color: white;
@@ -105,7 +115,7 @@ body {
 }
 
 #option-button:hover {
-  background-color: #0056b3;
+  background-color: seagreen;
 }
 
 /* Option Votes */
@@ -115,10 +125,76 @@ body {
   font-weight: bold;
 }
 
+/* Page Container */
+#create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Form Styling */
+#create-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+#create-title-label,
+#create-name-label,
+#create-body-label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2e7d32; /* Green Highlight */
+}
+
+/* Inputs & Textarea */
+#create-title-input,
+#create-name-input,
+#create-body-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #2e7d32; /* Green Border */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Textarea Specific Styling */
+#create-body-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Submit Button */
+#create-submit-button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2e7d32; /* Green Button */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#create-submit-button:hover {
+  background-color: #1b5e20; /* Darker Green Hover */
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
-  #polls-container {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 500px) {
+  #create-form {
+    width: 100%;
+    padding: 15px;
   }
 }
