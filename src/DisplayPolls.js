@@ -1,17 +1,20 @@
 const DisplayPolls = ({ polls }) => {
   return (
-    <div>
+    <div id="polls">
       {polls.map((poll) => {
         return (
-          <div key={poll.id}>
-            <h2>{poll.title}</h2>
-            <p>{poll.poller}</p>
+          <div id="poll-container" key={poll.id}>
+            <h2 id="poll-title">{poll.title}</h2>
+            <p id="poll-poller">{poll.poller}</p>
             <p>
               {poll.options.map((option) => (
-                <button>{option}</button>
+                <div id="options" key={option.optionNumber}>
+                  <button id="option-button">{option.optionValue}</button>
+                  <p id="option-votes">{option.optionVotes}</p>
+                </div>
               ))}
             </p>
-            <p>{poll.body}</p>
+            <p id="poll-body">{poll.body}</p>
           </div>
         );
       })}

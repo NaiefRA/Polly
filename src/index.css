@@ -1,13 +1,124 @@
+/* General Styles */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Page Title */
+#page-title {
+  font-size: 2rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Loading & Error Messages */
+#loading,
+#error {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ff0000;
+}
+#polls {
+  display: flex;
+}
+/* Polls Container */
+#polls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Individual Poll */
+#poll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Poll Title */
+#poll-title {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+/* Poll Poller */
+#poll-poller {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Poll Body */
+#poll-body {
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Options Container */
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Individual Option */
+#options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* Option Button */
+#option-button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#option-button:hover {
+  background-color: #0056b3;
+}
+
+/* Option Votes */
+#option-votes {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #polls-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

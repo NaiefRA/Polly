@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <h2>Welcome to Polly</h2>
+      <h2 id="page-title">Welcome to Polly</h2>
       {!err && isPending && <div>Loading...</div>}
       {data && <DisplayPolls polls={data} />}
       {err && <div>{err}</div>}

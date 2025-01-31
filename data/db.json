@@ -4,14 +4,20 @@
       "title": "test poll",
       "body": "this is a test poll",
       "poller": "jon snow",
-      "options": ["option 1", "option 2"],
+      "options": [
+        { "optionValue": "option 10", "optionNumber": 1, "optionVotes": 50 },
+        { "optionValue": "option 20", "optionNumber": 2, "optionVotes": 69 }
+      ],
       "id": 1
     },
     {
       "title": "test poll number 2",
       "body": "this is another test poll written by peter dinklage",
       "poller": "tyrion lannister",
-      "options": ["option 1", "option 2"],
+      "options": [
+        { "optionValue": "option 1", "optionNumber": 1, "optionVotes": 0 },
+        { "optionValue": "option 2", "optionNumber": 2, "optionVotes": 300 }
+      ],
       "id": 2
     }
   ]
