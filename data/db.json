@@ -4,14 +4,14 @@
       "title": "test poll",
       "body": "this is a test poll",
       "poller": "jon snow",
-      "votes": -10,
+      "options": ["option 1", "option 2"],
       "id": 1
     },
     {
       "title": "test poll number 2",
       "body": "this is another test poll written by peter dinklage",
       "poller": "tyrion lannister",
-      "votes": 500,
+      "options": ["option 1", "option 2"],
       "id": 2
     }
   ]

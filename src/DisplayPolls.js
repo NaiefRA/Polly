@@ -6,7 +6,11 @@ const DisplayPolls = ({ polls }) => {
           <div key={poll.id}>
             <h2>{poll.title}</h2>
             <p>{poll.poller}</p>
-            <p>{poll.votes}</p>
+            <p>
+              {poll.options.map((option) => (
+                <button>{option}</button>
+              ))}
+            </p>
             <p>{poll.body}</p>
           </div>
         );
