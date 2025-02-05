@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div id="navbar">
-      <h2 className="page-title">Welcome to Polly</h2>
+      <Link to="/" className="navbar-element">
+        <h2 className="page-title"> Welcome to Polly</h2>
+      </Link>
       <Link to="/new-poll" className="navbar-element">
         Create Poll
       </Link>

@@ -1,40 +1,32 @@
 {
   "Polls": [
     {
-      "title": "test poll",
-      "body": "this is a test poll",
-      "poller": "jon snow",
+      "id": "5316",
+      "body": "Does pineapple belong on pizza?",
+      "title": "Pineapple on Pizza?",
+      "poller": "Luigi Mangione",
       "options": [
         {
-          "optionValue": "option 10",
-          "optionNumber": 1,
-          "optionVotes": 50
-        },
-        {
-          "optionValue": "option 20",
-          "optionNumber": 2,
-          "optionVotes": 69
+          "optionValue": "YES, absolutely!!",
+          "optionVotes": 0
         }
-      ],
-      "id": "1"
+      ]
     },
     {
-      "title": "test poll number 2",
-      "body": "this is another test poll written by peter dinklage",
-      "poller": "tyrion lannister",
+      "id": "bc4a",
+      "body": "",
+      "title": "Who better?",
+      "poller": "Marcus",
       "options": [
         {
-          "optionValue": "option 1",
-          "optionNumber": 1,
+          "optionValue": "Jon Snow",
           "optionVotes": 0
         },
         {
-          "optionValue": "option 2",
-          "optionNumber": 2,
-          "optionVotes": 300
+          "optionValue": "Tyrion Lannister",
+          "optionVotes": 0
         }
-      ],
-      "id": "2"
+      ]
     }
   ]
 }
